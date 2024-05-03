@@ -10,7 +10,7 @@ export default function TextArea() {
 
     if (newText.includes('<script>')) {
       newText = newText.replace('<script>', '');
-      toast.error('Nice try! 🤣 No scripts please')
+      toast.error('Nice try! 🤣 Don\'t hack me please!')
     }
 
     setText(newText);
