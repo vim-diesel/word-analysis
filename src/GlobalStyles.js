@@ -27,11 +27,16 @@ html, body, #root {
   4. Add accessible line-height
   5. Improve text rendering
   6. Select font
+  7. Project specific display for form elements
 */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: #e1e8eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*
