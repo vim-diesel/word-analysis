@@ -26,10 +26,12 @@ html, body, #root {
   Typographic tweaks!
   4. Add accessible line-height
   5. Improve text rendering
+  6. Select font
 */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: Inter, sans-serif;
 }
 
 /*

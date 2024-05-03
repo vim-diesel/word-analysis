@@ -1,7 +1,8 @@
+import Header from "./Header";
 
 
 function App() {
-  return <p>Test</p>
+  return <Header />
 }
 
 export default App
