@@ -4,7 +4,26 @@ import styled from 'styled-components';
 // the text area. So Stats and the Textarea components are a part of the same div, and
 // this is a section of the div.
 export default function Stats() {
-  return <StyledStats>Stats</StyledStats>;
+  return (
+    <StyledStats>
+      <Stat>
+        <StatNumber>0</StatNumber>
+        <StatHeading>Words</StatHeading>
+      </Stat>
+      <Stat>
+        <StatNumber>0</StatNumber>
+        <StatHeading>Characters</StatHeading>
+      </Stat>
+      <Stat>
+        <StatNumber>0</StatNumber>
+        <StatHeading>Instagram</StatHeading>
+      </Stat>
+      <Stat>
+        <StatNumber>0</StatNumber>
+        <StatHeading>Facebook</StatHeading>
+      </Stat>
+    </StyledStats>
+  );
 }
 
 const StyledStats = styled.section`
@@ -12,4 +31,37 @@ const StyledStats = styled.section`
   background-color: #f1f6f8;
   display: flex;
   flex-wrap: wrap;
+`;
+
+const Stat = styled.section`
+  flex: 1 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+  }
+`;
+
+const StatNumber = styled.span`
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+`;
+
+const StatHeading = styled.h2`
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-weight: 500;
+  color: #747a7c;
 `;
