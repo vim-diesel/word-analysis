@@ -1,9 +1,25 @@
 import styled from 'styled-components';
+import toast from 'react-hot-toast';
+import React from 'react';
 
 export default function TextArea() {
+  const [text, setText] = React.useState('');
+
+  const handleTextChange = (e) => {
+    let newText = e.target.value;
+
+    if (newText.includes('<script>')) {
+      newText = newText.replace('<script>', '');
+      toast.error('Nice try! 🤣 No scripts please')
+    }
+
+    setText(newText);
+  };
+
   return (
     <StyledTextArea
-      onChange={(e) => console.log(e.target)}
+      value={text}
+      onChange={handleTextChange}
       placeholder='Enter your text'
       spellCheck='false'
     />
