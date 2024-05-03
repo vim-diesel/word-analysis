@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export default function TextArea() {
-  return <StyledTextArea />;
+  return (
+    <StyledTextArea
+      onChange={(e) => console.log(e.target)}
+      placeholder='Enter your text'
+      spellCheck='false'
+    />
+  );
 }
 
 const StyledTextArea = styled.textarea`

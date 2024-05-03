@@ -10,7 +10,7 @@ export default function Header() {
     <header>
       <Background />
       <StyledHeader>
-        Word <ThinHeader as='span'>Analysis</ThinHeader>
+        Word<ThinHeader as='span'>Analysis</ThinHeader>
       </StyledHeader>
     </header>
   );
