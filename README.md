@@ -2,6 +2,8 @@
 
 Welcome to the Word Analysis App repository! This is a React application built using plain JavaScript with Vite and Styled-Components. The app allows you to input text and receive an analysis of the text, including its fit for some Instagram/Twitter and Facebook. Additionally, the app can detect and remove any attempts to embed a `<script>` tag in the textarea.
 
+Check it out at [https://word-analysis.vercel.app/](https://word-analysis.vercel.app/)
+
 ## Features
 
 - **Text Analysis:** Input text and receive an analysis of the content.

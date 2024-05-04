@@ -51,6 +51,7 @@ const StatsWrapper = styled.section`
   background-color: #f1f6f8;
   display: flex;
   flex-wrap: wrap;
+
 `;
 
 const StatSection = styled.section`
@@ -69,6 +70,16 @@ const StatSection = styled.section`
   &:nth-child(4) {
     border-left: 1px solid rgba(0, 0, 0, 0.08);
   }
+
+  @media (max-width: 1150px) {
+    padding: 15px 10px;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(4) {
+      border: none;
+    }
+  }
 `;
 
 const StatNumber = styled.span`
@@ -76,6 +87,10 @@ const StatNumber = styled.span`
   font-weight: 600;
   font-size: 2.2rem;
   margin-bottom: 10px;
+
+  @media (max-width: 1150px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const StatHeading = styled.h2`

@@ -23,6 +23,10 @@ const StyledHeader = styled.h1`
   color: rgba(255, 255, 255, 0.92);
   margin-top: 75px;
   text-align: center;
+
+  @media (max-width: 1150px) {
+    font-size: 7vw;
+  }
 `;
 
 const ThinHeader = styled(StyledHeader)`

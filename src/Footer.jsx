@@ -15,4 +15,10 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   opacity: 0.4;
+
+  @media (max-width: 1150px) {
+    width: initial;
+    flex-direction: column;
+    align-items: center;
+  }
 `;

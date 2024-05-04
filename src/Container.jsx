@@ -26,4 +26,9 @@ const StyledMain = styled.main`
   display: flex;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 1150px) {
+    width: 85vw;
+    flex-direction: column;
+  }
 `;
