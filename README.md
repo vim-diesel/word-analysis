@@ -2,12 +2,6 @@
 
 Welcome to the Word Analysis App repository! This is a React application built using plain JavaScript with Vite and Styled-Components. The app allows you to input text and receive an analysis of the text, including its fit for some Instagram/Twitter and Facebook. Additionally, the app can detect and remove any attempts to embed a `<script>` tag in the textarea.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-
 ## Features
 
 - **Text Analysis:** Input text and receive an analysis of the content.
@@ -43,11 +37,4 @@ To get started with the Word Analysis App, follow these steps:
     npm run dev
     ```
 
-5. The application should now be running on [http://localhost:3000](http://localhost:3000).
-
-## Usage
-
-1. **Text Input:** Type or paste your text into the input area.
-2. **Analyze:** Click the "Analyze" button to receive an analysis of the text.
-3. **Results:** View the analysis results, including suitability for social media posts.
-4. **Security:** The app will automatically remove any `<script>` tags embedded in the text area.
+5. The application should now be running on [http://localhost:5173](http://localhost:5173).
