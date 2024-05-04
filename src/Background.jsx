@@ -13,8 +13,10 @@ const Bg = styled.div`
   width: 100%;
   background-image: linear-gradient(
       to right,
-      rgba(101, 0, 163, 0.9),
-      rgba(24, 120, 175, 0.9)
+      rgba(16, 0, 163, 0.557),
+      rgba(115, 166, 255, 0.456)
     ),
-    url('https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=100');
+    url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&auto=format&fit=crop&crop=center&w=1600&h=300&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 `;
+
+
