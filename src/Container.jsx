@@ -1,12 +1,17 @@
 import Stats from './Stats';
 import TextArea from './TextArea';
 import styled from 'styled-components';
+import React from 'react';
 
 export default function Container() {
+  const [text, setText] = React.useState('');
+  const numWords = text.split(' ').filter((word) => word !== '').length;
+  const numChars = text.length;
+
   return (
     <StyledMain>
-      <TextArea />
-      <Stats />
+      <TextArea text={text} setText={setText} />
+      <Stats numWords={numWords} numChars={numChars}/>
     </StyledMain>
   );
 }

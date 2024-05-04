@@ -3,37 +3,35 @@ import styled from 'styled-components';
 // We use a section tag, because it is a section of the container, combined with
 // the text area. So Stats and the Textarea components are a part of the same div, and
 // this is a section of the div.
-export default function Stats() {
+export default function Stats({numWords, numChars}) {
+
   return (
-    <StyledStats>
-      <Stat>
-        <StatNumber>0</StatNumber>
-        <StatHeading>Words</StatHeading>
-      </Stat>
-      <Stat>
-        <StatNumber>0</StatNumber>
-        <StatHeading>Characters</StatHeading>
-      </Stat>
-      <Stat>
-        <StatNumber>0</StatNumber>
-        <StatHeading>Instagram</StatHeading>
-      </Stat>
-      <Stat>
-        <StatNumber>0</StatNumber>
-        <StatHeading>Facebook</StatHeading>
-      </Stat>
-    </StyledStats>
+    <StatsWrapper>
+      <Stat number={numWords} heading='Words' />
+      <Stat number={numChars} heading='Characters' />
+      <Stat number={280 - numChars} heading='Instagram' />
+      <Stat number={2200 - numChars} heading='Facebook' />
+    </StatsWrapper>
   );
 }
 
-const StyledStats = styled.section`
+function Stat({ number, heading }) {
+  return (
+    <StatSection>
+      <StatNumber>{number}</StatNumber>
+      <StatHeading>{heading}</StatHeading>
+    </StatSection>
+  );
+}
+
+const StatsWrapper = styled.section`
   flex: 1.3;
   background-color: #f1f6f8;
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Stat = styled.section`
+const StatSection = styled.section`
   flex: 1 150px;
   display: flex;
   flex-direction: column;
